@@ -1,0 +1,16 @@
+{
+	"manifest_version": 3,
+	"name": "Twitter Auto Scroll",
+	"version": "1.0.0",
+	"description": "Automatically scrolls to the latest tweet when the user is scrolled to the top of the Twitter Pro segment(s).",
+	"content_scripts": [
+		{
+			"matches": [
+				"https://pro.twitter.com/*"
+			],
+			"js": [
+				"content.js"
+			]
+		}
+	]
+}
